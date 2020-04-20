@@ -17,6 +17,11 @@ abstract class KanavaToCrmTracker {
      *
      */
     protected static $public_trackingID = null;
+    
+    /**
+    *   Tracking data.
+    *
+    */
     private static $tracking_data = array(
         'pt_id' => null, //    $public_trackingID  , from  SPOTMORE.fi service provider , e.g. 130000001
         'locale' => 'fi', // Locale for all descriptions ( article / group / ... ) 
