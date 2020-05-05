@@ -23,7 +23,7 @@ abstract class KanavaToCrmTracker {
     *
     */
     private static $tracking_data = array(
-        'pt_id' => null, //    $public_trackingID  , from  SPOTMORE.fi service provider , e.g. 130000001
+        'pt_id' => null, // REQUIRED. public tracking ID  , from  SPOTMORE.fi service provider , e.g. 130000001
         'locale' => 'fi', // Locale for all descriptions ( article / group / ... ) 
         'customer_id' => '', // e-commerce db customer id 
         'visited_url' => '', //  = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
@@ -36,11 +36,11 @@ abstract class KanavaToCrmTracker {
             'lead_company' => '', // Lead company name
             'lead_firstname' => '', // Lead First name
             'lead_lastname' => '', // Lead Last name
-            'lead_email' => '', // Lead Email address, minimum requirement!
+            'lead_email' => '', // REQUIRED. Lead Email address, minimum requirement!
             'lead_externalid' => null, // e-commerce  custmer id from its DB
             'lead_phone_number' => null, // e-commerce  custmer lead_phone_number from its DB
             'lead_city' => null, // e-commerce  custmer lead_city from its DB
-            'lead_postalcode' => null, // e-commerce  custmer lead_postalcode from its DB
+            'lead_postalcode' => null, // e-commerce  custmer lead_postalcode from its DB. MAX 5 digits
             'lead_street_address' => null, // e-commerce  custmer lead_street_address from its DB
             'allow_direct_marketing' => 0, // 0 or 1. Allow direct marketing, newsletter subscriptions
             // safe to set 1, if customer has requested newsletter.
