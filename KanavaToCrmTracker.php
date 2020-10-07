@@ -44,16 +44,16 @@ abstract class KanavaToCrmTracker {
             'lead_street_address' => null, // e-commerce  custmer lead_street_address from its DB
             'allow_direct_marketing' => 0, // 0 or 1. Allow direct marketing, newsletter subscriptions
             // safe to set 1, if customer has requested newsletter.
-            // for Quest accounts this is certainly 0	
+            // for Guest accounts this is certainly 0	
             'LeadGroup' => array(// E-commerce customer groups
             /*
               0 => array(                 // optional
               'group_externalid' => null ,   // e-commerce group id from its DB
-              'group_name' => null        // verkkokaupan asiakasryhmän nimi
+              'group_name' => null        // customer gruop name
               ),
               1 =>  array(                      // optional
               'group_externalid' => null ,   // e-commerce group id from its DB,
-              'group_name' => null        //// customer gruop name
+              'group_name' => null        //  customer gruop name
               ), */
             )
         ),
