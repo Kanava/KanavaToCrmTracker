@@ -100,6 +100,7 @@ abstract class KanavaToCrmTracker {
           'qty' => 1,               // product quantity in the cart
           'a_price' => 55.0,           // tax excluding price with all the option prices included
           'price_currency' => 'EUR' // 3 currency
+          'article_fhd_imge_url' => 'https://eshop.domain.com/images/1920x1080_px_product_image.jpg', // optional, not mandatory url to article main image, jpg or png
           ),
           // 1 => ....  //  next   n number or products in cart
          */
@@ -123,6 +124,7 @@ abstract class KanavaToCrmTracker {
                 0 => array(
                     'ecommerce_article_id' => '', // magento product id, unique with product feature combinations
                     'article_title' => '', // article name 
+                    'article_fhd_imge_url' => 'https://eshop.domain.com/images/1920x1080_px_product_image.jpg', // optional, not mandatory url to article main image, jpg or png
                     'qty' => '', // ordered quantity 
                     'a_price' => '', // single qty price, netto 
                     'price_currency' => '', // 3 chars, eg 'eur' ,  'usd'
