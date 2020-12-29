@@ -71,6 +71,7 @@ abstract class KanavaToCrmTracker {
             // this key is presented if customer is visitng a product details page
             'ecommerce_article_id' => null, // 
             'article_title' => ' product title with model ', //  product title,
+            'article_fhd_imge_url' => 'https://eshop.domain.com/images/1920x1080_image.jpg', // optional url to article main image, jpg or png
             'is_active' => 1, //  not mandatory key.  Client site can deactivate old products by making generic API calls.
         /*
           'ArticleGroup' => array(// product group  name, not mandatory
