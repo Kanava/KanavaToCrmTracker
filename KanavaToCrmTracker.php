@@ -71,7 +71,8 @@ abstract class KanavaToCrmTracker {
             // this key is presented if customer is visitng a product details page
             'ecommerce_article_id' => null, // 
             'article_title' => ' product title with model ', //  product title,
-            'article_fhd_image_url' => 'https://eshop.domain.com/images/1920x1080_image.jpg', // optional url to article main image, jpg or png
+            'article_url' => 'https://www.domain.com/full/path/to/product_page.html', // full url to product page
+            'article_fhd_image_url' => 'https://www.domain.com/images/1920x1080_image.jpg', // optional url to article main image, jpg or png
             'is_active' => 1, //  not mandatory key.  Client site can deactivate old products by making generic API calls.
         /*
           'ArticleGroup' => array(// product group  name, not mandatory
@@ -100,6 +101,7 @@ abstract class KanavaToCrmTracker {
           'qty' => 1,               // product quantity in the cart
           'a_price' => 55.0,           // tax excluding price with all the option prices included
           'price_currency' => 'EUR' // 3 currency
+          'article_url' => 'https://www.domain.com/full/path/to/product_page.html', // full url to product page
           'article_fhd_image_url' => 'https://eshop.domain.com/images/1920x1080_px_product_image.jpg', // optional, not mandatory url to article main image, jpg or png
           ),
           // 1 => ....  //  next   n number or products in cart
@@ -124,6 +126,7 @@ abstract class KanavaToCrmTracker {
                 0 => array(
                     'ecommerce_article_id' => '', // magento product id, unique with product feature combinations
                     'article_title' => '', // article name 
+                    'article_url' => 'https://www.domain.com/full/path/to/product_page.html', // full url to product page
                     'article_fhd_image_url' => 'https://eshop.domain.com/images/1920x1080_px_product_image.jpg', // optional, not mandatory url to article main image, jpg or png
                     'qty' => '', // ordered quantity 
                     'a_price' => '', // single qty price, netto 
